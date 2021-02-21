@@ -1,0 +1,19 @@
+docker exec -it 3830e8f429da bash
+ls -la 
+cd fizz_buzz
+iex -S mix 
+compile
+recompile
+
+FizzBuzz.build("numbers.txt")
+FizzBuzz.build("invalid.txt")
+
+%ExMon.Player{} (chamar uma struct)
+%ExMon.Player{life: 100} (passar dados uma struct)
+ExMon.Player.build("Tom", :chute, :soco, :cura)
+
+player = ExMon.create_player("Tom", :chute, :cura, :soco)
+ExMon.start_game(player)
+ExMon.make_move(:chute)
+
+mix test (sair do iex para poder rodar!)
