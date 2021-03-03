@@ -1,12 +1,11 @@
-docker exec -it 3830e8f429da bash
-ls -la 
-cd fizz_buzz
+docker exec -it <id> bash
+
 iex -S mix 
+
 compile
+
 recompile
 
-FizzBuzz.build("numbers.txt")
-FizzBuzz.build("invalid.txt")
 
 %ExMon.Player{} (chamar uma struct)
 %ExMon.Player{life: 100} (passar dados uma struct)
